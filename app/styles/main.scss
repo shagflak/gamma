@@ -1,0 +1,173 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+section {
+    padding: 40px 0px 40px 0px;
+}
+
+/*Capture life project styles*/
+.jumbotron img.app-btn{
+    width: 40%;
+
+}
+
+.em-text{
+  color:#1caa98 !important;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background: #1b222a url(../images/site_showcase_bg.jpg) no-repeat top center;
+    color: #fff;
+    height: 568px;
+    overflow: none;
+}
+
+.jumbotron p {
+    margin-bottom: 40px;
+}
+
+.jumbotron h1 {
+    margin-top: 60px;
+}
+
+.jumbotron img.showcase_img {
+    width: 70%;
+}
+
+img.demo {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+section#feature {
+    background: #109B99;
+    color: #fff;
+    padding: 40px;
+    overflow: auto;
+}
+
+section#feature ul li {
+    font-size : 22px;
+    line-height: 2.0em;
+    list-style: none;
+}
+
+section#title-bar {
+    height: 120px;
+    background: #1caa98;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+/*footer styles*/
+footer {
+    background: #353537;
+    color: #fff;
+    padding: 30px 0 20px 0;
+    bottom: 0;
+}
+
+footer li {
+    float: left;
+    list-style: none;
+    margin-right: 4px;
+}
+
+footer a {
+    color : #fff;
+}
+
+footer a:hover {
+    color: #109B99;
+}
+
+footer p {
+    float: right;
+}
+
+/*About page*/
+
+section#about {
+
+}
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 1200px){
+
+}
+
+@media(max-width: 991px){
+     .showcase_img {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 990px){
+    /* hide jumbotron image */
+    .jumbotron img.app-btn{
+        width: 30%;
+    }
+
+    /* Adjust jumbotron background size since the image was removed */
+    .jumbotron {
+        height: 400px;
+        background-size: 100% 100%;
+    }
+
+    .jumbotron h1 {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    /* Adjust jumbotron background size since the image was removed */
+    .jumbotron {
+        height: 400px !important;
+        background-size: 100% 100%;
+    }
+
+    .jumbotron h1 {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .jumbotron {
+        height: 450px !important;
+        background-image: none;
+        text-align: center;
+    }
+
+    .jumbotron img.app-btn{
+        width: 60%;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    section#feature ul li {
+        font-size: 19px;
+    }
+
+    footer p {
+        float: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    footer li {
+        padding-right: 20px;
+    }
+
+
+}
